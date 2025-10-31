@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import joblib
 
-model=joblib.load('model/model.pkl')
+model=joblib.load('model.pkl')
 
 
 st.title('Iris Flower Prediction')
@@ -19,3 +19,4 @@ prediction = model.predict(input_data)
 predicted_class = {0:'setosa',1:'versicolor',2:'verginica'}[prediction[0]]
 
 st.write(f"Predicted Iris Species: **{predicted_class}**")
+
