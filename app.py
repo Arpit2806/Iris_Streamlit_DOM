@@ -16,6 +16,6 @@ input_data = np.array([[sepal_length,sepal_width,petal_length,petal_width]])
 
 
 prediction = model.predict(input_data)
-predicted_class = {0:'setosa':'versicolor',2:'verginica'}[prediction[0]]
+predicted_class = {0:'setosa',1:'versicolor',2:'verginica'}[prediction[0]]
 
 st.write(f"Predicted Iris Species: **{predicted_class}**")
